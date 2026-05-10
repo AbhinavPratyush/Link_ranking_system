@@ -4,25 +4,25 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="Url")
 public class Url {
-String url;
+String link;
 String snippet;
 String title;
 
     public Url() {
     }
 
-    public Url(String url, String snippet, String title) {
-        this.url = url;
+    public Url(String link, String snippet, String title) {
+        this.link = link;
         this.snippet = snippet;
         this.title = title;
     }
 
-    public String getUrl() {
-        return url;
+    public String getLink() {
+        return link;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setLink(String link) {
+        this.link = link;
     }
 
     public String getSnippet() {

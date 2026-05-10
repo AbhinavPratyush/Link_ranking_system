@@ -27,7 +27,7 @@ public class DbCallingService
         List<UrlToRank> vc=new ArrayList<>();
         for(String i:urls){
             Url url=urlImp.findByLink(i);
-            UrlToRank urlToRank=new UrlToRank(url.getUrl(), url.getTitle(), url.getSnippet());
+            UrlToRank urlToRank=new UrlToRank(url.getLink(), url.getTitle(), url.getSnippet());
             vc.add(urlToRank);
         }
 
