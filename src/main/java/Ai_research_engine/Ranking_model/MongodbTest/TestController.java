@@ -1,17 +1,15 @@
-package Ai_research_engine.Ranking_model.Controller;
-
+package Ai_research_engine.Ranking_model.MongodbTest;
 
 import Ai_research_engine.Ranking_model.ClassesForObj.DTO.RankingRequest;
 import Ai_research_engine.Ranking_model.ClassesForObj.QuerryToFind;
 import Ai_research_engine.Ranking_model.ClassesForObj.UrlsRecieved;
-import Ai_research_engine.Ranking_model.MongodbTest.DbCallingService;
 import Ai_research_engine.Ranking_model.Services.RankingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ControllerHome {
+public class TestController {
 
     @Autowired
     RankingService rankingService;
@@ -21,7 +19,7 @@ public class ControllerHome {
     DbCallingService dbCallingService;
     //test
 
-    @PostMapping("/ranking")
+    @PostMapping("/test")
     public String gotToRank(UrlsRecieved urlsRecieved, QuerryToFind querry){
 
         //test
@@ -31,8 +29,7 @@ public class ControllerHome {
 
         String out=rankingService.rankBy(urlsRecieved, querry.getQuery());
 
-        return " ";
+        return "Sucess";
     }
-
 
 }
