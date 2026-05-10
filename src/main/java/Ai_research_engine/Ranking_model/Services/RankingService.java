@@ -18,7 +18,7 @@ public class RankingService {
     @Autowired
     FilterLater filterLater;
 
-    public String rankBy(UrlsRecieved urlsRecieved, QuerryToFind querry){
+    public String rankBy(UrlsRecieved urlsRecieved, String querry){
 
         List<UrlAfterRank> rankedUrl=rankFirst.ranking(urlsRecieved, querry);
 
