@@ -21,8 +21,17 @@ public class RankingService {
 
     public String rankBy(UrlsRecieved urlsRecieved, String querry){
 
+
+
+    for(UrlToRank u: urlsRecieved.getServerResponse())
+        System.out.println(u.toString());
+
+
+
         List<UrlToRank> rankedUrl=rankFirst.ranking(urlsRecieved, querry);
 
+
+        System.out.println(urlsRecieved.getServerResponse().size()+"---------"+ rankedUrl.size());
         for(UrlToRank u:rankedUrl){
             System.out.println(u.toString());
         }

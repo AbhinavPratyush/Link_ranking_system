@@ -5,6 +5,7 @@ import java.util.List;
 public class UrlsRecieved {
     List<UrlToRank> ServerResponse;
 
+
     public UrlsRecieved() {
     }
 

@@ -5,6 +5,16 @@ public class UrlToRank {
     String title;
     String snippet;
 
+
+    @Override
+    public String toString() {
+        return "UrlToRank{" +
+                "link='" + link + '\'' +
+                ", title='" + title + '\'' +
+                ", snippet='" + snippet + '\'' +
+                '}';
+    }
+
     public UrlToRank() {
     }
 

@@ -8,7 +8,7 @@ import java.util.List;
 public class Querryfromdb {
 
 
-    String querry;
+    String query;
     List<String> urlAssociated;
 
     public List<String> getUrlAssociated() {
@@ -19,12 +19,12 @@ public class Querryfromdb {
         this.urlAssociated = urlAssociated;
     }
 
-    public String getQuerry() {
-        return querry;
+    public String getQuery() {
+        return query;
     }
 
-    public void setQuerry(String querry) {
-        this.querry = querry;
+    public void setQuery(String query) {
+        this.query = query;
     }
 
 }

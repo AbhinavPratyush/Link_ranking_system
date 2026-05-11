@@ -21,14 +21,14 @@ public class TestController {
     //test
 
     @PostMapping("/test")
-    public String gotToRank(@RequestBody QuerryToFind querry){
+    public String gotToRank(@RequestBody QuerryToFind query){
 
         //test
-        RankingRequest rankingRequest=dbCallingService.dbCall(querry.getQuery());
+        RankingRequest rankingRequest=dbCallingService.dbCall(query.getQuery());
         //test
 
 
-        String out=rankingService.rankBy(rankingRequest.getUrlsRecieved(),querry.getQuery());
+        String out=rankingService.rankBy(rankingRequest.getUrlsRecieved(),query.getQuery());
 
         return "Sucess";
     }
