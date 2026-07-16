@@ -28,7 +28,7 @@ public class RankFirst {
 //            int ind=urlsRecieved.getServerResponse().indexOf(u);
             scoreList.add(score);
         }
-        highScorer=fitIn(scoreList,10);
+        highScorer=fitIn(scoreList,Math.min(20,scoreList.size()));
         for(int i: highScorer){
             rankedUrl.add(urlsRecieved.getServerResponse().get(i));
         }

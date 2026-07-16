@@ -6,6 +6,14 @@ public class RankingRequest {
     String Q;
     UrlsRecieved urlsRecieved;
 
+    public RankingRequest() {
+    }
+
+    public RankingRequest(String q, UrlsRecieved urlsRecieved) {
+        Q = q;
+        this.urlsRecieved = urlsRecieved;
+    }
+
     public String getQ() {
         return Q;
     }

@@ -9,6 +9,10 @@ public class UrlsRecieved {
     public UrlsRecieved() {
     }
 
+    public UrlsRecieved(List<UrlToRank> serverResponse) {
+        ServerResponse = serverResponse;
+    }
+
     public List<UrlToRank> getServerResponse() {
         return ServerResponse;
     }

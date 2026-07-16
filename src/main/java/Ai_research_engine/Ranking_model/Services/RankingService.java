@@ -4,6 +4,7 @@ import Ai_research_engine.Ranking_model.ClassesForObj.QuerryToFind;
 import Ai_research_engine.Ranking_model.ClassesForObj.UrlAfterRank;
 import Ai_research_engine.Ranking_model.ClassesForObj.UrlToRank;
 import Ai_research_engine.Ranking_model.ClassesForObj.UrlsRecieved;
+import Ai_research_engine.Ranking_model.Services.FilteringServ.FilterLater;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,8 +17,8 @@ public class RankingService {
     @Autowired
     RankFirst rankFirst;
 
-//    @Autowired
-//    FilterLater filterLater;
+    @Autowired
+    FilterLater filterLater;
 
     public String rankBy(UrlsRecieved urlsRecieved, String querry){
 
